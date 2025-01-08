@@ -16,3 +16,19 @@ int main(int argc, char** argv) {
     return 0;
 } 
 ```
+
+# Prerequest
+1. CMake Version >= 3.30
+2. cuda toolkit version >= 12
+
+# How to build ?
+mkdir build && cd build && cmake ..
+
+- There are four exe in the build folder:
+    - task1
+    - task2
+    - task3
+    - task4
+You can run them.
+
+

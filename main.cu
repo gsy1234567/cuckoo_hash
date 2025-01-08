@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
     try {
         std::vector<u32> keys;
         rand_gen(keys, 1_M);
-        store(keys, "../data/")
+        store(keys, "../data/");
 
 
     } catch (const std::exception& e) {

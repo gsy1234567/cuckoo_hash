@@ -16,7 +16,7 @@ int main() {
         table_size = static_cast<std::size_t>(std::ceil(table_size_base * ratio));
         evict_chain_len = static_cast<std::size_t>(4 * std::log2(table_size));
         OptTestCase test (10, table_size);
-        test.run(keys,{(const uint32_t *)nullptr, {0UL}}, std::array<std::size_t, 1>{evict_chain_len});
+        test.run(keys,keys, std::array<std::size_t, 1>{evict_chain_len});
     }
     return 0;
 }

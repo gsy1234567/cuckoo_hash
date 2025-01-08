@@ -205,6 +205,7 @@ namespace {
         std::size_t idx;
         std::size_t pos;
         auto tile = cg::tiled_partition<GroupSize>(cg::this_thread_block());
+
         u32 group_found = 0;
 
         for(idx = blockDim.x * blockIdx.x + threadIdx.x ; idx < num ; idx += gridDim.x * blockDim.x) {
